@@ -4,9 +4,9 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 3.22.0
-Release  : 4
-URL      : https://download.gnome.org/core/3.22/3.22.0/sources/gsettings-desktop-schemas-3.22.0.tar.xz
-Source0  : https://download.gnome.org/core/3.22/3.22.0/sources/gsettings-desktop-schemas-3.22.0.tar.xz
+Release  : 5
+URL      : http://ftp.gnome.org/pub/gnome/sources/gsettings-desktop-schemas/3.22/gsettings-desktop-schemas-3.22.0.tar.xz
+Source0  : http://ftp.gnome.org/pub/gnome/sources/gsettings-desktop-schemas/3.22/gsettings-desktop-schemas-3.22.0.tar.xz
 Summary  : Shared GSettings schemas for the desktop, including helper headers
 Group    : Development/Tools
 License  : LGPL-2.1
