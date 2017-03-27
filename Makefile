@@ -1,5 +1,5 @@
 PKG_NAME := gsettings-desktop-schemas
-URL := http://ftp.gnome.org/pub/gnome/sources/gsettings-desktop-schemas/3.22/gsettings-desktop-schemas-3.22.0.tar.xz
-ARCHIVES :=
+URL := https://download.gnome.org/sources/gsettings-desktop-schemas/3.24/gsettings-desktop-schemas-3.24.0.tar.xz
+
 
 include ../common/Makefile.common
