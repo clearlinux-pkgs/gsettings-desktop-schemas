@@ -4,7 +4,7 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 3.24.0
-Release  : 6
+Release  : 7
 URL      : https://download.gnome.org/sources/gsettings-desktop-schemas/3.24/gsettings-desktop-schemas-3.24.0.tar.xz
 Source0  : https://download.gnome.org/sources/gsettings-desktop-schemas/3.24/gsettings-desktop-schemas-3.24.0.tar.xz
 Summary  : Shared GSettings schemas for the desktop, including helper headers
@@ -56,7 +56,7 @@ locales components for the gsettings-desktop-schemas package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1490637389
+export SOURCE_DATE_EPOCH=1491318105
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -68,7 +68,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1490637389
+export SOURCE_DATE_EPOCH=1491318105
 rm -rf %{buildroot}
 %make_install
 %find_lang gsettings-desktop-schemas
@@ -78,8 +78,10 @@ rm -rf %{buildroot}
 
 %files data
 %defattr(-,root,root,-)
+/usr/lib64/girepository-1.0/GDesktopEnums-3.0.typelib
 /usr/share/GConf/gsettings/gsettings-desktop-schemas.convert
 /usr/share/GConf/gsettings/wm-schemas.convert
+/usr/share/gir-1.0/*.gir
 /usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
 /usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
 /usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
@@ -113,9 +115,7 @@ rm -rf %{buildroot}
 %files dev
 %defattr(-,root,root,-)
 /usr/include/gsettings-desktop-schemas/gdesktop-enums.h
-/usr/lib64/girepository-1.0/GDesktopEnums-3.0.typelib
 /usr/lib64/pkgconfig/gsettings-desktop-schemas.pc
-/usr/share/gir-1.0/*.gir
 
 %files locales -f gsettings-desktop-schemas.lang
 %defattr(-,root,root,-)
