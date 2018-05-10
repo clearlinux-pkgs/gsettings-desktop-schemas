@@ -4,7 +4,7 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 3.28.0
-Release  : 13
+Release  : 14
 URL      : https://download.gnome.org/sources/gsettings-desktop-schemas/3.28/gsettings-desktop-schemas-3.28.0.tar.xz
 Source0  : https://download.gnome.org/sources/gsettings-desktop-schemas/3.28/gsettings-desktop-schemas-3.28.0.tar.xz
 Summary  : Shared GSettings schemas for the desktop, including helper headers
