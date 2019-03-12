@@ -4,10 +4,10 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 3.32.0
-Release  : 17
+Release  : 18
 URL      : https://download.gnome.org/sources/gsettings-desktop-schemas/3.32/gsettings-desktop-schemas-3.32.0.tar.xz
 Source0  : https://download.gnome.org/sources/gsettings-desktop-schemas/3.32/gsettings-desktop-schemas-3.32.0.tar.xz
-Summary  : Shared GSettings schemas for the desktop
+Summary  : Shared GSettings schemas for the desktop, including helper headers
 Group    : Development/Tools
 License  : LGPL-2.1
 Requires: gsettings-desktop-schemas-data = %{version}-%{release}
@@ -36,7 +36,6 @@ Summary: dev components for the gsettings-desktop-schemas package.
 Group: Development
 Requires: gsettings-desktop-schemas-data = %{version}-%{release}
 Provides: gsettings-desktop-schemas-devel = %{version}-%{release}
-Requires: gsettings-desktop-schemas = %{version}-%{release}
 
 %description dev
 dev components for the gsettings-desktop-schemas package.
@@ -67,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552351942
+export SOURCE_DATE_EPOCH=1552434020
 export LDFLAGS="${LDFLAGS} -fno-lto"
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain   builddir
 ninja -v -C builddir
@@ -77,6 +76,10 @@ mkdir -p %{buildroot}/usr/share/package-licenses/gsettings-desktop-schemas
 cp COPYING %{buildroot}/usr/share/package-licenses/gsettings-desktop-schemas/COPYING
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gsettings-desktop-schemas
+## install_append content
+mkdir -p %{buildroot}/usr/lib64/pkgconfig
+mv %{buildroot}/usr/share/pkgconfig/gsettings-desktop-schemas.pc %{buildroot}/usr/lib64/pkgconfig/
+## install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -116,11 +119,11 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
 /usr/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml
 /usr/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
-/usr/share/pkgconfig/gsettings-desktop-schemas.pc
 
 %files dev
 %defattr(-,root,root,-)
 /usr/include/gsettings-desktop-schemas/gdesktop-enums.h
+/usr/lib64/pkgconfig/gsettings-desktop-schemas.pc
 
 %files license
 %defattr(0644,root,root,0755)

@@ -1,0 +1,2 @@
+mkdir -p %{buildroot}/usr/lib64/pkgconfig
+mv %{buildroot}/usr/share/pkgconfig/gsettings-desktop-schemas.pc %{buildroot}/usr/lib64/pkgconfig/
