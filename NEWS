@@ -1,3 +1,41 @@
+Major changes in 3.32.0
+=======================
+- Translation updates
+
+Major changes in 3.31.92
+========================
+- Drop legacy build systems
+- Translation updates
+
+Major changes in 3.31.91
+========================
+- Translation updates
+
+Major changes in 3.31.90
+========================
+- Updated default monospace font
+- More meson build fixes
+- Translation updates
+
+Major changes in 3.31.0.2
+=========================
+- Fixed generation of enums XML on meson builds
+- Convert post-install script to python
+- Translation updates
+
+Major changes in 3.31.0.1
+=========================
+- Brown paper bag release, included several fixes to meson build
+
+Major changes in 3.31.0
+=======================
+- Add settings to inhibit microphone/camera
+- Change tablets'/touchscreens' "display" setting to "output" one
+  with different semantics.
+- Added meson build support
+- Changed default clock settings
+- Added XF86Keyboard keybinding to cycle the keyboard layout
+
 Major changes in 3.28.1
 =======================
 - Set default background image for screen lock to an existing one
