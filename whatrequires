@@ -1,4 +1,7 @@
 # This file contains recursive sources that require this package
+glib-networking
 gnome-control-center
 gnome-settings-daemon
 gnome-system-monitor
+kde-gtk-config
+yelp
