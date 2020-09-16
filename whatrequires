@@ -1,8 +1,10 @@
 # This file contains recursive sources that require this package
 flatpak
 fwupd
+glib-networking
 gnome-settings-daemon
 gnome-system-monitor
 gtk3
+libgdata
 mutter
 yelp
