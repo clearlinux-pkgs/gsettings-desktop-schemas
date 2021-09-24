@@ -8,4 +8,6 @@ gtk3
 libgdata
 mutter
 ostree
+totem
+xdg-desktop-portal
 yelp
