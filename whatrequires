@@ -1,13 +1,10 @@
 # This file contains recursive sources that require this package
-flatpak
-fwupd
-glib-networking
+gnome-contacts
 gnome-settings-daemon
 gnome-system-monitor
-gtk3
 libgdata
-mutter
 ostree
+seahorse
 totem
 xdg-desktop-portal
 yelp
