@@ -4,7 +4,7 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 43.0
-Release  : 27
+Release  : 28
 URL      : https://download.gnome.org/sources/gsettings-desktop-schemas/43/gsettings-desktop-schemas-43.0.tar.xz
 Source0  : https://download.gnome.org/sources/gsettings-desktop-schemas/43/gsettings-desktop-schemas-43.0.tar.xz
 Summary  : Shared GSettings schemas for the desktop, including helper headers
