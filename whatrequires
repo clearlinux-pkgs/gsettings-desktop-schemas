@@ -2,6 +2,7 @@
 gnome-contacts
 gnome-settings-daemon
 gnome-system-monitor
+grilo
 libgdata
 ostree
 seahorse
