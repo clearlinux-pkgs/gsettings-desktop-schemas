@@ -3,6 +3,7 @@ gnome-contacts
 gnome-settings-daemon
 gnome-system-monitor
 grilo
+libproxy
 ostree
 seahorse
 totem
