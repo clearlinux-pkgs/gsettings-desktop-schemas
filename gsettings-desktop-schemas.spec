@@ -7,7 +7,7 @@
 #
 Name     : gsettings-desktop-schemas
 Version  : 48.0
-Release  : 38
+Release  : 39
 URL      : https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz
 Source0  : https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz
 Summary  : Shared GSettings schemas for the desktop, including helper headers
